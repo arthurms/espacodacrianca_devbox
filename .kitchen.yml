@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", {ip: "192.168.33.33"}]
+  synced_folders:
+    - ['../espacodacrianca', '/home/vagrant/espacodacrianca', "create: true, type: :nfs"]
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[rails-dev-box::default]
+    attributes:

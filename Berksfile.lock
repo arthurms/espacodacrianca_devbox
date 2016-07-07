@@ -1,0 +1,33 @@
+DEPENDENCIES
+  rails-dev-box
+    path: .
+    metadata: true
+
+GRAPH
+  apt (4.0.1)
+    compat_resource (>= 12.10)
+  chef_handler (1.4.0)
+  compat_resource (12.10.6)
+  java (1.40.0)
+    apt (>= 0.0.0)
+    windows (>= 0.0.0)
+  mysql (7.2.0)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  rails-dev-box (1.0.0)
+    apt (>= 0.0.0)
+    mysql (~> 7.0)
+    ruby_build (>= 0.0.0)
+    ruby_rbenv (>= 0.0.0)
+  rbac (1.0.3)
+  ruby_build (0.8.0)
+  ruby_rbenv (1.0.1)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  smf (2.2.8)
+    rbac (>= 1.0.1)
+  windows (1.44.1)
+    chef_handler (>= 0.0.0)
+  yum (3.11.0)
+  yum-mysql-community (0.2.0)
+    yum (>= 3.2)
